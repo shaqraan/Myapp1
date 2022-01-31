@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity"
+    android:layout_below="@+id/Susername">
+
+    <ImageView
+        android:id="@+id/imag"
+        android:layout_width="265dp"
+        android:layout_height="279dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="@color/purple_200"
+        android:textSize="35dp"
+        android:layout_below="@+id/imag"
+        android:textStyle="italic"
+        android:id="@+id/t1"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/t1"
+        android:id="@+id/t2"
+        android:text="User Name :"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/Susername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/t2"
+        android:gravity="center"
+        android:hint="User Name"
+        android:textColorHint="@color/teal_700" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/Susername"
+        android:text="Password :"
+        android:id="@+id/t3"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/t3"
+        android:hint="Password"
+        android:id="@+id/Spassword"
+        android:gravity="center"
+        />
+
+
+    <Button
+        android:id="@+id/loginbtn"
+
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/Spassword"
+        android:shadowRadius="155"
+        android:text="Sign Up" />
+
+
+
+</RelativeLayout>
